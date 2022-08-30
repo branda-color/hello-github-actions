@@ -1,0 +1,2 @@
+name: A workflow for my Hello World file  #workflow的名字
+on: push    #觸發條件
