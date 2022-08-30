@@ -10,7 +10,7 @@ inputs:
 
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "Dockerfile" #做一個鏡像的構建
 
 branding:
   icon: "mic"
