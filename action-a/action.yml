@@ -1,0 +1,17 @@
+name: "Hello Actions"
+description: "Greet someone"
+author: "octocat@github.com"
+
+inputs:
+  MY_NAME:  #傳入myname環境變量
+    description: "Who to greet"
+    required: true
+    default: "World"
+
+runs:
+  using: "docker"
+  image: "Dockerfile" #做一個鏡像的構建
+
+branding:
+  icon: "mic"
+  color: "purple"

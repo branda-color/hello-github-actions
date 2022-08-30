@@ -1,0 +1,11 @@
+name: A workflow for my Hello World file  #workflow的名字
+on: push    #觸發條件
+jobs: #定義具體工作要做什麼
+  build:
+    name: Hello world action
+    runs-on: ubuntu-latest  #在ubuntu上執行
+    steps:
+      - uses: actions/checkout@v1  #執行一個叫做 actions/checkout的動作
+      - uses: ./action-a    #使用action-a這個目錄,有一個環境變量Mona
+        with:
+          MY_NAME: "Mona"
